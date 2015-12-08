@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css" />
+    
+    <link rel="stylesheet" href="style.css" />
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+$(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+});</script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+
+	<div data-role="header">
+		<h1>Innovation in NJ</h1>
+        <a href="index.html" data-icon="home" class="ui-btn ui-btn-right" >Home</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+ 
+     The Pretty Big Things exhibit at the New Jersey State museum is made up of a few core categories, Innovation being one of them. Innovation is the action or process of involving. The scavenger hunt created highlights some of the cool exhibits that involved innovation in New Jersey. Each one of the exhibits connects to New Jersey in it’s own unique way.
+     
+       <a href="IQ1.html"><button class="ui-btn">Next </button>  </a>   
+
+	</div><!-- /content -->
+
+
+</div><!-- /page -->
+
+</body>
+</html>

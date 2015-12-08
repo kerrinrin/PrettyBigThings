@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css" />
+    
+    <link rel="stylesheet" href="style.css" />
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+$(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+});</script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+
+	<div data-role="header">
+		<h1>Choose a Category</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+ 
+        
+        <div class="ui-grid-a cat">
+            
+            <div class="ui-block-a"><a href="innovationInfo.html"><img id="inBadge" src="badges/badge-innovation-default.png" width="100%"><br/> Innovation</a></div>
+  <div class="ui-block-b"><img src="badges/badge-immigration-default.png" width="100%"><br/> Immigration </div>
+  <div class="ui-block-a"><img src="badges/badge-industry-default.png" width="100%"><br/> Industry</div>
+  <div class="ui-block-b"> <img src="badges/badge-innovation-default.png" width="100%"> <br/> Innovation</div>
+         
+</div>
+       <a href=""><button class="ui-btn">Send Badges </button>  </a>   
+
+	</div><!-- /content -->
+<script>
+    
+    if(sessionStorage.inBadge == "gold") {
+        
+        $('#inBadge').attr('src', 'badges/badge-innovation-gold.png');
+        
+        
+    }
+    
+    
+     if(sessionStorage.inBadge == "silver") {
+        
+        $('#inBadge').attr('src', 'badges/badge-innovation-silver.png');
+        
+        
+    }
+    
+    
+     if(sessionStorage.inBadge == "bronze") {
+        
+        $('#inBadge').attr('src', 'badges/badge-innovation-bronze.png');
+        
+        
+    }
+</script>
+
+</div><!-- /page -->
+
+</body>
+</html>

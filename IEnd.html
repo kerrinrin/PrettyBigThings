@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css" />
+    
+    <link rel="stylesheet" href="style.css" />
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+$(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+});</script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    
+</head>
+<body>
+
+<div data-role="page">
+
+
+	<div data-role="header">
+		<h1>Innovation in NJ</h1>
+        
+        
+    <!-- /header -->
+    </div>
+        
+       
+
+	<div role="main" class="ui-content">
+        
+    <h1>Congratulations!</h1>
+        <p>You've completed this section and earned the <span id="badgeLevel"></span></p>
+        <img id="badge" src="" width="100%">
+     
+       <a href="cat.html"><button class="ui-btn"> Back to Category Selection</button>  </a>   
+
+	</div><!-- /content -->
+
+<script>
+    
+       var theScore = localStorage.score; 
+        
+        console.log("final:" + theScore);
+    
+    if(theScore == 20) {
+        
+       $('#badgeLevel').text("Gold Innovation Badge! You got a perfect score!"); 
+        console.log("Gold");
+        
+        $('#badge').attr('src', 'badges/badge-innovation-gold.png');
+        sessionStorage.inBadge = "gold";
+    }
+        
+        else if(theScore > 15 && theScore < 20) {
+            
+            $('#badgeLevel').text("Silver Innovation Badge!"); 
+             $('#badge').attr('src', 'badges/badge-innovation-silver.png');
+            
+            sessionStorage.inBadge = "silver";
+        }
+        
+        
+        else {
+            
+           
+            $('#badgeLevel').text("Bronze Innovation Badge! ");  
+             $('#badge').attr('src', 'badges/badge-innovation-bronze.png');
+            sessionStorage.inBadge = "bronze";
+        }
+    
+    </script>
+    
+</div><!-- /page -->
+
+</body>
+</html>

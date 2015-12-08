@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css" />
+    
+    <link rel="stylesheet" href="style.css" />
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+$(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+});</script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+
+	<div data-role="header">
+		<h1>Innovation in NJ</h1>
+        <a href="#home" data-icon="home" data-rel="popup" class="ui-btn ui-btn-right" >Home</a>
+        
+    <!-- /header -->
+    </div>
+        
+        <div data-role="popup" id="home" data-overlay-theme="b">
+
+    <div data-role="main" class="ui-content"><p>Are you sure you want to go back? You'll lose your progress.</p><a href="cat.html">Back to Category Selection</a><br/>
+ 
+</div>
+	</div>
+
+	<div role="main" class="ui-content">
+        
+        <h1>That's correct!</h1>
+        
+        <p>It took you # tries to get that one right. Your score so far is #%</p>
+        
+        <h2>Fun Fact:</h2>
+<p>  Robert Stevens could have received huge royalty payments for his revolutionary invention but never received a patent for the T-rail. </p>
+     
+       <a href="IQ5.html"><button class="ui-btn">Next Question </button>  </a>   
+
+	</div><!-- /content -->
+
+<script>
+    
+      console.log(localStorage.score);
+    </script>
+</div><!-- /page -->
+
+</body>
+</html>
