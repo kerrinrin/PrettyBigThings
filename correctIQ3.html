@@ -16,6 +16,7 @@ $(document).bind('mobileinit',function(){
     $.mobile.pushStateEnabled = false;
 });</script>
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -40,19 +41,25 @@ $(document).bind('mobileinit',function(){
         
         <h1>That's correct!</h1>
         
-        <p>It took you # tries to get that one right. Your score so far is #%</p>
+        <p> Your score so far is <span id="score"></span>%</p>
         
-        <h2>Fun Fact:</h2>
+      <div class="funfact">   <h2>Fun Fact:</h2>
  
-<p> Traveling weavers like Nathaniel Young lived with the families for whom they were designing coverlets, sometimes for as long as several weeks. </p>
+<p> Traveling weavers like Nathaniel Young lived with the families for whom they were designing coverlets, sometimes for as long as several weeks. </p></div>
      
-       <a href="IQ4.html"><button class="ui-btn">Next Question </button>  </a>   
+<center>       <a href="IQ4.html"><button class="ui-btn">Next Question </button>  </a>   </center>
 
 	</div><!-- /content -->
 
 <script>
     
       console.log(localStorage.score);
+    
+   var theScore =  (localStorage.score /20)*100;
+    theScore = String(theScore);
+    console.log(theScore);
+        $('#score').text(theScore);
+
     </script>
 </div><!-- /page -->
 

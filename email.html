@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css" />
+    
+    <link rel="stylesheet" href="style.css" />
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+$(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+});</script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div data-role="page">
+
+
+	<div data-role="header" data-add-back-btn="true" >
+		<h1>Send Badges</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+        <div class="email">
+        
+ 
+        <p >Want to take your Pretty Big Things badges home with you? You can! Send us your name and email and we'll give you a special certificate of your acheivement. If you make an account on Mozilla Open Badges they'll appear there too!</p>
+        
+        <label for="name">Name:</label>
+<input type="text" name="text-basic" id="name" value="">
+   <br />
+           <label for="email">Email:</label>
+<input type="text" name="text-basic" id="email" value="">
+        
+<center>            <a href="email.html"><button class="ui-btn" id="sendBadge">Take Badges Home! </button>  </a>  </center></div> 
+            <script>
+        
+         $("#sendBadge").click(function(event){ 
+         
+             $(this).text('Enjoy your badges!');
+             $('#name').val('');
+             $('#email').val('');
+         
+         
+         });
+        </script>
+
+</div><!-- /page -->
+
+</body>
+</html>

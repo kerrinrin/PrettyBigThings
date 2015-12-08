@@ -16,6 +16,7 @@ $(document).bind('mobileinit',function(){
     $.mobile.pushStateEnabled = false;
 });</script>
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -28,7 +29,18 @@ $(document).bind('mobileinit',function(){
 
 	<div data-role="header">
 		<h1>Innovation in NJ</h1>
-	</div><!-- /header -->
+        
+	  <a href="#home" data-icon="home" data-rel="popup" class="ui-btn ui-btn-right" >Home</a>
+        
+    <!-- /header -->
+    </div>
+        
+        <div data-role="popup" id="home" data-overlay-theme="b">
+
+    <div data-role="main" class="ui-content"><p>Are you sure you want to go back? You'll lose your progress.</p><a href="cat.html">Back to Category Selection</a><br/>
+ 
+</div>
+	</div>
 
 	<div role="main" class="ui-content">
         <h1>The Thirst for Oil</h1>
@@ -40,21 +52,18 @@ $(document).bind('mobileinit',function(){
         <fieldset data-role="controlgroup">
         <input type="radio" name="i1" value="surf" id="surf">
         <label for="surf" id="surfL">Surf City and Cape May</label>
-            
-        <input type="radio" name="i1" value="trenton" id="trenton">
+        <input type="radio" name="i1" value="trenton" id="trenton">
         <label for="trenton" id="trentonL">Trenton and Princeton</label>
-            
-        <input type="radio" name="i1" value="newark" id="newark">
+        <input type="radio" name="i1" value="newark" id="newark">
         <label for="newark" id="newarkL">Newark and Perth Amboy </label>
-            
-          <input type="radio" name="i1"  value="manhattan" id="manhattan">
+        <input type="radio" name="i1"  value="manhattan" id="manhattan">
         <label for="manhattan" id="manhattanL">Manhattan and Brooklyn  </label>  
     </fieldset>
 </form>
       
       
         
-<button class="ui-btn" id="submit">Submit Answer </button>    
+<center><button class="ui-btn" id="submit">Submit Answer </button> </center>   
         
          
      
@@ -80,7 +89,7 @@ $(document).bind('mobileinit',function(){
          if($answer == 'newark') {
         
           	
-$.mobile.pageContainer.pagecontainer("change", "correctIQ1.html");
+$.mobile.pageContainer.pagecontainer("change", "IQ1-5.html");
 
             
          }

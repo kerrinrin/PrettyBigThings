@@ -1,6 +1,110 @@
+[data-role=page]{height: 100% !important; position:relative !important;     
+   background-color: #fee2b0 !important;} 
+
+
+[data-role=header] {
+    
+   background-color: #003764 !important;
+    color: #fee2b0 !important;
+    font-size: 14pt;
+    text-transform: uppercase;
+    font-weight: normal;
+    
+    
+    
+    
+    
+}
+
+
+[data-role=header] h1 {
+    
+ white-space: normal !important;   
+    
+}
+
 .cat div{
     
  padding: 10px;  
     text-align: center;
     
+}
+
+
+.cat a {
+    
+ color: #003764 !important;
+    text-transform: uppercase;
+}
+
+
+#main {
+    
+ background-image: url('washington.png'); 
+    background-size: cover;
+     background-color: #fee2b0;
+}
+
+body {
+    
+   background-color: #fee2b0 !important;
+    font-family: 'Lora' !important;
+    
+    
+    
+}
+
+button {
+    
+ color: #fff !important;
+    background-color: #003764 !important;
+   text-decoration: none !important;
+    text-shadow: none !important;
+    border: 0px !important ;
+    padding: 20px 20px !important;
+    width: 60% !important;
+    
+    
+}
+
+a {
+  text-decoration: none !important; 
+    color: #fff !important;
+    
+}
+
+.instruct {
+    
+ margin: 20px;
+    text-align: left;
+}
+
+.ui-header .ui-btn, .ui-footer .ui-btn {
+    
+ background-color: #003764 !important;   
+}
+
+
+.funfact p {
+ background-color: #3c5a7f;
+  margin: 0px 10px;
+    padding: 20px;
+    color: #fff;
+    line-height: 24px;
+    font-family: sans-serif;
+    text-shadow: none;
+}
+
+.funfact h2 {
+    margin-left: 10px;
+ color: #003764;
+
+}
+
+.email {
+ margin: 20px;   
+}
+
+#home a {
+ color: #003764 !important;   
 }

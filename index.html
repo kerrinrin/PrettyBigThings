@@ -5,10 +5,12 @@
 	<title>Page Title</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css" />
     
-    <link rel="stylesheet" href="style.css" />
+  
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script>
 $(document).bind('mobileinit',function(){
@@ -17,18 +19,23 @@ $(document).bind('mobileinit',function(){
     $.mobile.pushStateEnabled = false;
 });</script>
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+        <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-<div data-role="page" id="main">
 
+<div data-role="page" id="main">
+  <center> 
+<!--
 	<div data-role="header">
 		<h1>NJ State Museum</h1>
-	</div><!-- /header -->
+	</div> /header 
+-->
 
 	<div role="main" class="ui-content">
-		<center> <p>
-        Pretty Big Things Trivia Hunt</p></center>
+		
         <img src="pbt.png" width="100%">
         
        <a href="#bar"><button class="ui-btn">Let's play </button> </a> 
@@ -50,19 +57,20 @@ $(document).bind('mobileinit',function(){
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <center> 
+        <p class="instruct">The scavenger hunt is broken up into categories based off the New Jersey State Museum, Pretty Big Things exhibit. First you'll want to select your category, after choosing which one you want to try, you'll start to answer questions on the different pieces in that collection.</p> <p class="instruct"> The answers to these questions come from both looking at the pieces on display as well as reading the information about it. Also there is a scoring system that allows you to earn a badge, gold, silver and bronze. </p>
         
-        <button class="ui-btn"><a href="cat.html">Okay!</a></button>
+            <a href="cat.html"><button class="ui-btn">Okay!</button></a>
 	</div><!-- /content -->
 <script>
     
 sessionStorage.inBadge = " ";    
 </script>
-	
+	</center>
 </div><!-- /page -->
     
     
 
-
+ 
 </body>
 </html>
